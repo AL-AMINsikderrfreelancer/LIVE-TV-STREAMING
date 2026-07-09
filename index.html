@@ -38,25 +38,7 @@
 
     <!-- Video.js Script -->
     <script src="https://zencdn.net"></script>
-
-
-      // বাটনে ক্লিক করলে চ্যানেল পরিবর্তন করার ফাংশন
-        function playChannel(streamUrl, buttonElement) {
-            player.src({
-                src: streamUrl,
-                type: 'application/x-mpegURL'
-            });
-            player.play();
-
-            // একটিভ বাটন স্টাইল পরিবর্তন
-            var buttons = document.getElementsByClassName('channel-btn');
-            for (var i = 0; i < buttons.length; i++) {
-                buttons[i].classList.remove('active');
-            }
-            buttonElement.classList.add('active');
-        }
-
-                
+            
     <script>
         function playChannel(url) {
             var player = videojs('tv-player');
